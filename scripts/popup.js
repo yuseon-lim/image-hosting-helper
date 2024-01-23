@@ -1,3 +1,6 @@
+/**
+ * get document elements
+ */
 const signWithGooleBtn = document.getElementById("signWithGoogleBtn");
 
 /**
@@ -10,5 +13,6 @@ signWithGooleBtn.addEventListener("click", () => {
       return;
     }
     console.log("Obtained token:", token);
+    chrome.runtime.sendMessage({ action: "getUserInfo", token: token });
   });
 });
