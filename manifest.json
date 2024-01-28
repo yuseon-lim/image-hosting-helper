@@ -8,6 +8,9 @@
   "action": {
     "default_popup": "index.html"
   },
+  "background": {
+    "service_worker": "/scripts/background.js"
+  },
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhNZ8eksScUB3Lct32qA3InRHcqeyKQ/uNqoOwWF9+sG6B1kH1wnUzAcHo7BMYblFNuNWeYzuu1xQM7bd1E31YLU4F4YEmoxIDyMdk8f8tdi7X7l8zTtJ/8zfwSopcSDGEVejUPkeO3RMYnxYUMBVVFm5/S39bPbz8f5SOl+7V+2AFZTKfbp+f7tJNxTzSHgfsSRGEm92fyoWb64kLTPEfldrDCXWaBUfBvrXMogO2/E83OfotOBxbcPWa0LnYiSQMCyy36EwueDSSd9e+kA8/in5/zoF73Ybi8a5x0r12ljNTZZqh33c2N1Ty9uZFRkd/wO2L9ju0AHAkDYi46HklQIDAQAB",
   "oauth2": {
     "client_id": "776203611029-j42huir3in1h6aqqu0r897ampfhiei1o.apps.googleusercontent.com",
