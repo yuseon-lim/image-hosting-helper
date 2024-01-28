@@ -11,3 +11,10 @@
 .eslintcache
 
 .env
+
+# dist 폴더 내부의 모든 파일 및 폴더 무시
+dist/*
+
+# dist 폴더 내부의 index.html 및 manifest.json은 예외 처리
+!dist/index.html
+!dist/manifest.json
