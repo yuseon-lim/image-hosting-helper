@@ -1,24 +1,14 @@
-import * as React from 'react';
-import './App.css';
+import * as React from "react";
+import "./App.css";
+import FileUpload from "./FileUpload";
+import Login from "./Login";
 
 function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
+  const isAuthenticated = () => {
+    // localstorage에서 token 저장 확인하기
+    return true;
+  };
+  return isAuthenticated() ? <FileUpload /> : <Login />;
 }
 
 export default App;
