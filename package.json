@@ -26,8 +26,10 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "antd": "^5.13.3",
     "chrome-types": "^0.1.254",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3"
   }
 }
