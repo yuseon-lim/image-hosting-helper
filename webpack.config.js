@@ -10,7 +10,13 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-typescript', "@babel/preset-react"],
+                        cacheDirectory: true
+                    }
+                },
                 exclude: /node_module/,
             },
             {
@@ -25,5 +31,11 @@ module.exports = {
     output: {
         filename: '[name]bundle.js',
         path: path.resolve(__dirname, 'dist'),
-    }
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
+    },
+    cache: true
 }
